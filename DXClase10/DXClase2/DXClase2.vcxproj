@@ -42,7 +42,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\ajedro\Documents\MEGA\xamp\graficas\DXClase10\DXClase2\mis clases;C:\Users\Admin\Documents\MEGA\xamp\graficas\DXClase10\DXClase2\mis clases;C:\Users\Admin\Documents\MEGA\xamp\graficas\DXClase10\DXClase2\imgui;C:\Users\ajedro\Documents\MEGA\xamp\graficas\DXClase10\DXClase2\imgui;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\imgui;C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

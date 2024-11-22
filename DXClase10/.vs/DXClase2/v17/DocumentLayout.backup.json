@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\DXClase10\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\DXRender.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\DXRender.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|solutionrelative:DXClase2\\DXRender.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\GameMath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\GameMath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|solutionrelative:DXClase2\\GameMath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\MeshPrimitives.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\MeshPrimitives.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|solutionrelative:DXClase2\\MeshPrimitives.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1BC6165-ACB3-4EB1-8797-FBD552E307B0}|DXClase2\\DXClase2.vcxproj|solutionrelative:DXClase2\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MeshPrimitives.h",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\MeshPrimitives.h",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\MeshPrimitives.h",
               "RelativeDocumentMoniker": "DXClase2\\MeshPrimitives.h",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\MeshPrimitives.h",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\MeshPrimitives.h",
               "RelativeToolTip": "DXClase2\\MeshPrimitives.h",
               "ViewState": "AgIAAKwFAAAAAAAAAAAvwLoFAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -44,9 +44,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GameMath.h",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\GameMath.h",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\GameMath.h",
               "RelativeDocumentMoniker": "DXClase2\\GameMath.h",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\GameMath.h",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\GameMath.h",
               "RelativeToolTip": "DXClase2\\GameMath.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -56,11 +56,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DXRender.h",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\DXRender.h",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\DXRender.h",
               "RelativeDocumentMoniker": "DXClase2\\DXRender.h",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\DXRender.h*",
-              "RelativeToolTip": "DXClase2\\DXRender.h*",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF8AAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\DXRender.h",
+              "RelativeToolTip": "DXClase2\\DXRender.h",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-23T08:56:44.536Z",
               "EditorCaption": ""
@@ -69,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\main.cpp",
               "RelativeDocumentMoniker": "DXClase2\\main.cpp",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\DXClase10\\DXClase2\\main.cpp",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\DX11-Race-Game\\DXClase10\\DXClase2\\main.cpp",
               "RelativeToolTip": "DXClase2\\main.cpp",
               "ViewState": "AgIAAK4AAAAAAAAAAAAAALkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

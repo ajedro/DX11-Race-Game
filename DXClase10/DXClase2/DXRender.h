@@ -95,7 +95,20 @@ private:
 	float speed = 0.02f * (PC_multiply/10);
 	float wheeling = .002f * (PC_multiply / 10);
 
-	
+	float prueba;
+	float prueba2;
+	float prueba3;
+
+	float prueb4a;
+	float prueba5;
+
+	float prue5ba;
+	float prue6ba;
+
+
+
+
+
 
 public:
 	DXRender()
