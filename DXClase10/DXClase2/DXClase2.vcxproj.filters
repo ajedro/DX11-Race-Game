@@ -347,6 +347,9 @@
     <ClInclude Include="colision_math.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mis clases\Race_points.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="vertexShader.vs">
@@ -372,6 +375,9 @@
     </None>
     <None Include="..\..\..\..\..\Downloads\dxsdk-master\dxsdk-master\Include\d3dx10math.inl">
       <Filter>Header Files</Filter>
+    </None>
+    <None Include="pixelShaderLines.ps">
+      <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -194,6 +194,7 @@
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="MeshPrimitives.h" />
+    <ClInclude Include="mis clases\Race_points.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\Downloads\dxsdk-master\dxsdk-master\Include\d3dvec.inl" />
@@ -202,6 +203,7 @@
     <None Include="..\..\..\..\..\Downloads\dxsdk-master\dxsdk-master\Include\d3dx_dxgiformatconvert.inl" />
     <None Include="pixelShader.ps" />
     <None Include="pixelShaderGUI.ps" />
+    <None Include="pixelShaderLines.ps" />
     <None Include="pixelShaderMultitextura.ps" />
     <None Include="vertexShader.vs" />
   </ItemGroup>

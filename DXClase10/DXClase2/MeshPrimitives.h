@@ -98,6 +98,16 @@ public:
 		
 	}
 
+	MPrimitives(ID3D11Device* d3d11Device, ID3D11DeviceContext* d3d11DevCon, float Size, LPCWSTR texturePath, LPCWSTR textureNormalPath, int ShaderType)
+	{
+		this->Size = Size;
+		light.specularPower = 2;
+
+		InitScene(d3d11Device, d3d11DevCon, texturePath, textureNormalPath, ShaderType);
+		createCube();
+
+	}
+
 	MPrimitives(ID3D11Device* d3d11Device, ID3D11DeviceContext* d3d11DevCon, int Stacks, int Slices, float Radius, LPCWSTR texturePath, LPCWSTR textureNormalPath, int ShaderType)
 	{
 		PrimitiveBoundings = new SphereBoundingInfo();
@@ -227,6 +237,9 @@ public:
 			break;
 		case ShaderMultitextura:
 			pixelShaderFile = L"pixelShaderMultitextura.ps";
+			break;
+		case ShaderLines:
+			pixelShaderFile = L"pixelShaderLines.ps";
 			break;
 		default:
 			break;
@@ -466,6 +479,161 @@ public:
 
 		indexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
 		indexBufferDesc.ByteWidth = sizeof(DWORD)* numIndex;
+		indexBufferDesc.BindFlags = D3D11_BIND_INDEX_BUFFER;
+		indexBufferDesc.CPUAccessFlags = 0;
+		indexBufferDesc.MiscFlags = 0;
+
+		D3D11_SUBRESOURCE_DATA iinitData;
+
+		iinitData.pSysMem = indices;
+		d3d11Device->CreateBuffer(&indexBufferDesc,
+			&iinitData,
+			&IndexBuffer);
+	}
+
+
+
+	void createRectangle(rectangle_colision &in)
+	{
+
+		rectangle_ in_rectangle= in.return_translated_position();
+
+
+		float cubeSize = Size / 2.0f;
+		//Create the vertex buffer
+		SimpleVertex vertex[] =
+		{
+			//// Front Face
+			//{ D3DXVECTOR3(-cubeSize, -cubeSize, -cubeSize), D3DXVECTOR2(0.0f, 1.0f) },
+			//{ D3DXVECTOR3(-cubeSize, cubeSize, -cubeSize), D3DXVECTOR2(0.0f, 0.0f) },
+			//{ D3DXVECTOR3(cubeSize, cubeSize, -cubeSize), D3DXVECTOR2(1.0f, 0.0f) },
+			//{ D3DXVECTOR3(cubeSize, -cubeSize, -cubeSize), D3DXVECTOR2(1.0f, 1.0f) },
+
+			//// Back Face
+			//{ D3DXVECTOR3(-cubeSize, -cubeSize, cubeSize), D3DXVECTOR2(1.0f, 1.0f) },
+			//{ D3DXVECTOR3(cubeSize, -cubeSize, cubeSize), D3DXVECTOR2(0.0f, 1.0f) },
+			//{ D3DXVECTOR3(cubeSize, cubeSize, cubeSize), D3DXVECTOR2(0.0f, 0.0f) },
+			//{ D3DXVECTOR3(-cubeSize, cubeSize, cubeSize), D3DXVECTOR2(1.0f, 0.0f) },
+
+			//// Top Face
+			//{ D3DXVECTOR3(-cubeSize, cubeSize, -cubeSize), D3DXVECTOR2(0.0f, 1.0f) },
+			//{ D3DXVECTOR3(-cubeSize, cubeSize, cubeSize), D3DXVECTOR2(0.0f, 0.0f) },
+			//{ D3DXVECTOR3(cubeSize, cubeSize, cubeSize), D3DXVECTOR2(1.0f, 0.0f) },
+			//{ D3DXVECTOR3(cubeSize, cubeSize, -cubeSize), D3DXVECTOR2(1.0f, 1.0f) },
+
+			//// Bottom Face
+			//{ D3DXVECTOR3(-cubeSize, -cubeSize, -cubeSize), D3DXVECTOR2(1.0f, 1.0f) },
+			//{ D3DXVECTOR3(cubeSize, -cubeSize, -cubeSize), D3DXVECTOR2(0.0f, 1.0f) },
+			//{ D3DXVECTOR3(cubeSize, -cubeSize, cubeSize), D3DXVECTOR2(0.0f, 0.0f) },
+			//{ D3DXVECTOR3(-cubeSize, -cubeSize, cubeSize), D3DXVECTOR2(1.0f, 0.0f) },
+
+			//// Left Face
+			//{ D3DXVECTOR3(-cubeSize, -cubeSize, cubeSize), D3DXVECTOR2(0.0f, 1.0f) },
+			//{ D3DXVECTOR3(-cubeSize, cubeSize, cubeSize), D3DXVECTOR2(0.0f, 0.0f) },
+			//{ D3DXVECTOR3(-cubeSize, cubeSize, -cubeSize), D3DXVECTOR2(1.0f, 0.0f) },
+			//{ D3DXVECTOR3(-cubeSize, -cubeSize, -cubeSize), D3DXVECTOR2(1.0f, 1.0f) },
+
+			//// Right Face
+			//{ D3DXVECTOR3(cubeSize, -cubeSize, -cubeSize), D3DXVECTOR2(0.0f, 1.0f) },
+			//{ D3DXVECTOR3(cubeSize, cubeSize, -cubeSize), D3DXVECTOR2(0.0f, 0.0f) },
+			//{ D3DXVECTOR3(cubeSize, cubeSize, cubeSize), D3DXVECTOR2(1.0f, 0.0f) },
+			//{ D3DXVECTOR3(cubeSize, -cubeSize, cubeSize), D3DXVECTOR2(1.0f, 1.0f) },
+
+			
+
+
+			// Front Face
+			{ in_rectangle.P1, D3DXVECTOR2(0.0f, 1.0f) },
+			{ in_rectangle.P5, D3DXVECTOR2(0.0f, 0.0f) },
+			{ in_rectangle.P6, D3DXVECTOR2(1.0f, 0.0f) },
+			{ in_rectangle.P2, D3DXVECTOR2(1.0f, 1.0f) },
+
+			
+			// Back Face
+			{ in_rectangle.P3, D3DXVECTOR2(1.0f, 1.0f) },
+			{ in_rectangle.P4, D3DXVECTOR2(0.0f, 1.0f) },
+			{ in_rectangle.P8, D3DXVECTOR2(0.0f, 0.0f) },
+			{ in_rectangle.P7, D3DXVECTOR2(1.0f, 0.0f) },
+
+			// Top Face
+			{ in_rectangle.P5, D3DXVECTOR2(0.0f, 1.0f) },
+			{ in_rectangle.P7, D3DXVECTOR2(0.0f, 0.0f) },
+			{ in_rectangle.P8, D3DXVECTOR2(1.0f, 0.0f) },
+			{ in_rectangle.P6, D3DXVECTOR2(1.0f, 1.0f) },
+
+			// Bottom Face
+			{ in_rectangle.P1, D3DXVECTOR2(1.0f, 1.0f) },
+			{ in_rectangle.P2, D3DXVECTOR2(0.0f, 1.0f) },
+			{ in_rectangle.P4, D3DXVECTOR2(0.0f, 0.0f) },
+			{ in_rectangle.P3, D3DXVECTOR2(1.0f, 0.0f) },
+
+			// Left Face
+			{  in_rectangle.P3, D3DXVECTOR2(0.0f, 1.0f) },
+			{  in_rectangle.P7, D3DXVECTOR2(0.0f, 0.0f) },
+			{  in_rectangle.P5, D3DXVECTOR2(1.0f, 0.0f) },
+			{  in_rectangle.P8, D3DXVECTOR2(1.0f, 1.0f) },
+
+			// Right Face
+			{ in_rectangle.P2, D3DXVECTOR2(0.0f, 1.0f) },
+			{ in_rectangle.P6, D3DXVECTOR2(0.0f, 0.0f) },
+			{ in_rectangle.P8, D3DXVECTOR2(1.0f, 0.0f) },
+			{ in_rectangle.P4, D3DXVECTOR2(1.0f, 1.0f) },
+		};
+		numVertex = ARRAYSIZE(vertex);
+
+		for (int i = 0; i < numVertex; i++)
+			vertex[i].normal = vertex[i].pos;
+
+		D3D11_BUFFER_DESC vertexBufferDesc;
+		ZeroMemory(&vertexBufferDesc, sizeof(vertexBufferDesc));
+
+		vertexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
+		vertexBufferDesc.ByteWidth = sizeof(SimpleVertex) * numVertex;
+		vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+		vertexBufferDesc.CPUAccessFlags = 0;
+		vertexBufferDesc.MiscFlags = 0;
+
+		D3D11_SUBRESOURCE_DATA vertexBufferData;
+
+		ZeroMemory(&vertexBufferData, sizeof(vertexBufferData));
+		vertexBufferData.pSysMem = vertex;
+		d3d11Device->CreateBuffer(&vertexBufferDesc, &vertexBufferData,
+			&VertexBuffer);
+
+		DWORD indices[] = {
+			// Front Face
+			0, 1, 2,
+			0, 2, 3,
+
+			// Back Face
+			4, 5, 6,
+			4, 6, 7,
+
+			// Top Face
+			8, 9, 10,
+			8, 10, 11,
+
+			// Bottom Face
+			12, 13, 14,
+			12, 14, 15,
+
+			// Left Face
+			16, 17, 18,
+			16, 18, 19,
+
+			// Right Face
+			20, 21, 22,
+			20, 22, 23
+		};
+		numIndex = ARRAYSIZE(indices);
+		setTangentBinormal(vertex, indices, 3);
+
+		D3D11_BUFFER_DESC indexBufferDesc;
+		ZeroMemory(&indexBufferDesc,
+			sizeof(indexBufferDesc));
+
+		indexBufferDesc.Usage = D3D11_USAGE_DEFAULT;
+		indexBufferDesc.ByteWidth = sizeof(DWORD) * numIndex;
 		indexBufferDesc.BindFlags = D3D11_BIND_INDEX_BUFFER;
 		indexBufferDesc.CPUAccessFlags = 0;
 		indexBufferDesc.MiscFlags = 0;

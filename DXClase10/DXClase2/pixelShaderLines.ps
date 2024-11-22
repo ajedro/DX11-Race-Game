@@ -1,0 +1,16 @@
+Texture2D<float4> patternTexture : register(t0);
+static const uint2 patternSize = uint2( 8, 8 );
+
+float4 main( float4 screenSpace : SV_Position ) : SV_Target
+{
+    // Convert position to pixels
+    const uint2 px = (uint2)screenSpace.xy;
+
+    // Tile the pattern texture.
+    // patternSize is constexpr;
+    // if it's power of 2, the `%` will compile into bitwise and, much faster.
+    const uint2 readPosition = px % patternSize;
+
+    // Read from the pattern texture
+    return patternTexture.Load( uint3( readposition, 0 ) );
+}

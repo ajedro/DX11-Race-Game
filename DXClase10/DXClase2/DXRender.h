@@ -95,20 +95,6 @@ private:
 	float speed = 0.02f * (PC_multiply/10);
 	float wheeling = .002f * (PC_multiply / 10);
 
-	float prueba;
-	float prueba2;
-	float prueba3;
-
-	float prueb4a;
-	float prueba5;
-
-	float prue5ba;
-	float prue6ba;
-
-
-
-
-
 
 public:
 	DXRender()
@@ -197,6 +183,8 @@ public:
 
 		//Set our Render Target
 		d3d11DevCon->OMSetRenderTargets( 1, &renderTargetView, depthStencilView );
+
+
 
 		cubo = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/cube.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio2/edificio2.jpg", ShaderDiffuse);
 		esfera = new MPrimitives(d3d11Device, d3d11DevCon, 32, 32, 1.0f, L"Texturas/escudo.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);

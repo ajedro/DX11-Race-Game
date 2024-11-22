@@ -1,8 +1,5 @@
 #pragma once
 
-
-
-
 #include <d3d11.h>
 #include <d3dx11.h>
 #include <d3dx10.h>
@@ -17,8 +14,7 @@ struct rectangle_ {
 private:
 
 	float width, height, depth;
-	D3DXVECTOR3 P1, P2, P3, P4, P5, P6, P7, P8;
-
+	
 
 
 	void set_points() {
@@ -26,13 +22,13 @@ private:
 
 
 		P1 = D3DXVECTOR3(-width, -height, -depth);
-		P2 = D3DXVECTOR3(width, -height, 0);
-		P3 = D3DXVECTOR3(0, -height, depth);
+		P2 = D3DXVECTOR3(width, -height, -depth);
+		P3 = D3DXVECTOR3(-width, -height, depth);
 		P4 = D3DXVECTOR3(width, -height, depth);
 
 		P5 = D3DXVECTOR3(-width, height, -depth);
-		P6 = D3DXVECTOR3(width, height, 0);
-		P7 = D3DXVECTOR3(0, height, depth);
+		P6 = D3DXVECTOR3(width, height, -depth);
+		P7 = D3DXVECTOR3(-width, height, depth);
 		P8 = D3DXVECTOR3(width, height, depth);
 
 		m_vecMax = D3DXVECTOR3(width, height, depth);
@@ -42,6 +38,8 @@ private:
 	}
 
 public:
+	D3DXVECTOR3 P1, P2, P3, P4, P5, P6, P7, P8;
+
 
 	D3DXVECTOR3 m_vecMax, m_vecMin;
 
@@ -155,6 +153,8 @@ public:
 
 		return res;
 	}
+
+
 
 	void print() {
 		std::cout << "" << std::endl;
