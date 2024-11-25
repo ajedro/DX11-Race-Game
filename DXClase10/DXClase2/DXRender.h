@@ -1,3 +1,5 @@
+#pragma once
+
 #ifndef _DXRender_
 #define _DXRender_
 
@@ -11,8 +13,8 @@
 #include "GameUiC.h"
 #include <colision_math.h>
 
-
-
+#include<iostream>
+#include <string>
 
 float x= 1;
 float z =1;
@@ -81,10 +83,12 @@ private:
 	RaceCoords racecoords;
 	rectangle_colision colision1;
 	rectangle_colision colision2;
-	float PC_multiply = 1.0;
+	race_check_point check_points;
+	
+	float PC_multiply = 10.0;
 
 	float angleb;
-	float velocity = 300 * PC_multiply;
+	float velocity = 1 * PC_multiply;
 	float camYaw = 0;
 
 	float aceleration = 0.000005f*PC_multiply;
@@ -95,6 +99,7 @@ private:
 	float speed = 0.02f * (PC_multiply);
 	float wheeling = .002f * (PC_multiply );
 
+	int posicionX, posicionY;
 
 public:
 	DXRender()
@@ -218,6 +223,7 @@ public:
 		//Inicializar variables creadas por usuario
 		InitObj_Matrix();
 		gameui.initialize(hwnd, d3d11Device, d3d11DevCon);
+		check_points.init_race();
 		
 
 		return true;
@@ -248,7 +254,7 @@ public:
 		return true;
 	}
 
-	void DetectInput(HWND hwnd)
+	void DetectInput(HWND hwnd )
 	{
 		DIMOUSESTATE mouseCurrState;
 
@@ -351,6 +357,17 @@ public:
 		if (keyboardState[DIK_SPACE])
 		{
 			agregar_coordenadas(camara->Position.x - 50, camara->Position.z - 50);
+		}
+		if (keyboardState[DIK_TAB]) {
+			
+			
+
+			string positionXStr ="X:"+ to_string(posicionX) + " Y:"+ to_string(posicionY) ;
+			LPCSTR posicionXchar = positionXStr.c_str();
+			
+			MessageBoxA(hwnd, posicionXchar, "COLISION 1", NULL);
+
+			
 		}
 
 		if((mouseCurrState.lX != mouseLastState.lX) || (mouseCurrState.lY != mouseLastState.lY))
@@ -455,7 +472,9 @@ public:
 	void UpdateScene(HWND hwnd)
 	{
 		
-		
+
+		posicionX = camara->Position.x;
+		posicionY = camara->Position.y;
 
 		gameui.program();
 		LastBoundingPosition = BoundingSphereTranslation;
@@ -492,6 +511,8 @@ public:
 			velocity = 50;
 		}
 
+
+		
 
 		//las coordenadas del jugador o la camara si se van a usar
 		camCoord = D3DXVECTOR3(camara->Position.x - 50,15, camara->Position.z - 50);
@@ -582,15 +603,19 @@ public:
 
 		//colisioes
 		colision1.set_position(Bike->get_obj_v());
-		colision2.set_position(camCoord);
+		colision2.set_position(gokart->get_obj_v());
 
 
 		BoundingSphere1->UpdateScene(Bounding1 * MatAcomodo * BoundinMatTranslation);
 		BoundingSphere2->UpdateScene(Bounding2* MatAcomodo);
 
+		check_points.check(colision2);
+
+	/*	if (check_points.checkpoints[1]) {
+			MessageBoxW(hwnd, L"COLISION 1", L"COLISION 1", NULL);
+		}*/
+
 		
-
-
 		//if (CheckBoundingSphereCollision(BoundingSphere1->PrimitiveBoundings->Radius,
 		//	BoundingSphere1->PrimitiveBoundings->PositionM, BoundingSphere1->getWorldMatrix(),
 		//	BoundingSphere2->PrimitiveBoundings->Radius,
@@ -636,7 +661,7 @@ public:
 		//billboard->DrawScene(camara);
 
 		
-
+		
 		terreno->DrawScene(camara);
 		skydomo->DrawScene(skyCamara);
 

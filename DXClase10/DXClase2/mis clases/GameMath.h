@@ -342,6 +342,12 @@ public:
 		translation = D3DXVECTOR3(X, Y, Z);
 	}
 
+	void set_position(D3DXVECTOR3 in) {
+
+
+		translation = in;
+	}
+
 	D3DXVECTOR3 get_position() {
 		return translation;
 	}

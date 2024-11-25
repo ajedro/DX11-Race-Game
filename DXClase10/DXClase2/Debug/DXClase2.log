@@ -1,449 +1,509 @@
 ﻿  main.cpp
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,1): warning C4005: 'DXGI_STATUS_OCCLUDED': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(12,9): warning C4005: 'DXGI_STATUS_OCCLUDED': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58885,1):
-  vea la definición anterior de 'DXGI_STATUS_OCCLUDED'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58160,9):
+      vea la definición anterior de “DXGI_STATUS_OCCLUDED”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,1): warning C4005: 'DXGI_STATUS_CLIPPED': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(13,9): warning C4005: 'DXGI_STATUS_CLIPPED': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58894,1):
-  vea la definición anterior de 'DXGI_STATUS_CLIPPED'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58169,9):
+      vea la definición anterior de “DXGI_STATUS_CLIPPED”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(14,1): warning C4005: 'DXGI_STATUS_NO_REDIRECTION': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(14,9): warning C4005: 'DXGI_STATUS_NO_REDIRECTION': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58903,1):
-  vea la definición anterior de 'DXGI_STATUS_NO_REDIRECTION'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58178,9):
+      vea la definición anterior de “DXGI_STATUS_NO_REDIRECTION”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(15,1): warning C4005: 'DXGI_STATUS_NO_DESKTOP_ACCESS': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(15,9): warning C4005: 'DXGI_STATUS_NO_DESKTOP_ACCESS': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58912,1):
-  vea la definición anterior de 'DXGI_STATUS_NO_DESKTOP_ACCESS'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58187,9):
+      vea la definición anterior de “DXGI_STATUS_NO_DESKTOP_ACCESS”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(16,1): warning C4005: 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(16,9): warning C4005: 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58921,1):
-  vea la definición anterior de 'DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58196,9):
+      vea la definición anterior de “DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(17,1): warning C4005: 'DXGI_STATUS_MODE_CHANGED': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(17,9): warning C4005: 'DXGI_STATUS_MODE_CHANGED': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58930,1):
-  vea la definición anterior de 'DXGI_STATUS_MODE_CHANGED'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58205,9):
+      vea la definición anterior de “DXGI_STATUS_MODE_CHANGED”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(18,1): warning C4005: 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(18,9): warning C4005: 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58939,1):
-  vea la definición anterior de 'DXGI_STATUS_MODE_CHANGE_IN_PROGRESS'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58214,9):
+      vea la definición anterior de “DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(21,1): warning C4005: 'DXGI_ERROR_INVALID_CALL': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(21,9): warning C4005: 'DXGI_ERROR_INVALID_CALL': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58954,1):
-  vea la definición anterior de 'DXGI_ERROR_INVALID_CALL'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58229,9):
+      vea la definición anterior de “DXGI_ERROR_INVALID_CALL”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(22,1): warning C4005: 'DXGI_ERROR_NOT_FOUND': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(22,9): warning C4005: 'DXGI_ERROR_NOT_FOUND': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58963,1):
-  vea la definición anterior de 'DXGI_ERROR_NOT_FOUND'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58238,9):
+      vea la definición anterior de “DXGI_ERROR_NOT_FOUND”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(23,1): warning C4005: 'DXGI_ERROR_MORE_DATA': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(23,9): warning C4005: 'DXGI_ERROR_MORE_DATA': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58972,1):
-  vea la definición anterior de 'DXGI_ERROR_MORE_DATA'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58247,9):
+      vea la definición anterior de “DXGI_ERROR_MORE_DATA”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(24,1): warning C4005: 'DXGI_ERROR_UNSUPPORTED': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(24,9): warning C4005: 'DXGI_ERROR_UNSUPPORTED': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58981,1):
-  vea la definición anterior de 'DXGI_ERROR_UNSUPPORTED'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58256,9):
+      vea la definición anterior de “DXGI_ERROR_UNSUPPORTED”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(25,1): warning C4005: 'DXGI_ERROR_DEVICE_REMOVED': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(25,9): warning C4005: 'DXGI_ERROR_DEVICE_REMOVED': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58990,1):
-  vea la definición anterior de 'DXGI_ERROR_DEVICE_REMOVED'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58265,9):
+      vea la definición anterior de “DXGI_ERROR_DEVICE_REMOVED”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(26,1): warning C4005: 'DXGI_ERROR_DEVICE_HUNG': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(26,9): warning C4005: 'DXGI_ERROR_DEVICE_HUNG': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(58999,1):
-  vea la definición anterior de 'DXGI_ERROR_DEVICE_HUNG'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58274,9):
+      vea la definición anterior de “DXGI_ERROR_DEVICE_HUNG”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(27,1): warning C4005: 'DXGI_ERROR_DEVICE_RESET': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(27,9): warning C4005: 'DXGI_ERROR_DEVICE_RESET': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59009,1):
-  vea la definición anterior de 'DXGI_ERROR_DEVICE_RESET'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58284,9):
+      vea la definición anterior de “DXGI_ERROR_DEVICE_RESET”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(28,1): warning C4005: 'DXGI_ERROR_WAS_STILL_DRAWING': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(28,9): warning C4005: 'DXGI_ERROR_WAS_STILL_DRAWING': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59018,1):
-  vea la definición anterior de 'DXGI_ERROR_WAS_STILL_DRAWING'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58293,9):
+      vea la definición anterior de “DXGI_ERROR_WAS_STILL_DRAWING”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(29,1): warning C4005: 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(29,9): warning C4005: 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59028,1):
-  vea la definición anterior de 'DXGI_ERROR_FRAME_STATISTICS_DISJOINT'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58303,9):
+      vea la definición anterior de “DXGI_ERROR_FRAME_STATISTICS_DISJOINT”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(30,1): warning C4005: 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(30,9): warning C4005: 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59037,1):
-  vea la definición anterior de 'DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58312,9):
+      vea la definición anterior de “DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(31,1): warning C4005: 'DXGI_ERROR_DRIVER_INTERNAL_ERROR': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(31,9): warning C4005: 'DXGI_ERROR_DRIVER_INTERNAL_ERROR': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59047,1):
-  vea la definición anterior de 'DXGI_ERROR_DRIVER_INTERNAL_ERROR'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58322,9):
+      vea la definición anterior de “DXGI_ERROR_DRIVER_INTERNAL_ERROR”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(32,1): warning C4005: 'DXGI_ERROR_NONEXCLUSIVE': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(32,9): warning C4005: 'DXGI_ERROR_NONEXCLUSIVE': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59056,1):
-  vea la definición anterior de 'DXGI_ERROR_NONEXCLUSIVE'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58331,9):
+      vea la definición anterior de “DXGI_ERROR_NONEXCLUSIVE”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(33,1): warning C4005: 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(33,9): warning C4005: 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59065,1):
-  vea la definición anterior de 'DXGI_ERROR_NOT_CURRENTLY_AVAILABLE'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58340,9):
+      vea la definición anterior de “DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(34,1): warning C4005: 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(34,9): warning C4005: 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59075,1):
-  vea la definición anterior de 'DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58350,9):
+      vea la definición anterior de “DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(35,1): warning C4005: 'DXGI_ERROR_REMOTE_OUTOFMEMORY': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dxgitype.h(35,9): warning C4005: 'DXGI_ERROR_REMOTE_OUTOFMEMORY': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59084,1):
-  vea la definición anterior de 'DXGI_ERROR_REMOTE_OUTOFMEMORY'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58359,9):
+      vea la definición anterior de “DXGI_ERROR_REMOTE_OUTOFMEMORY”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(917,1): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(917,9): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59399,1):
-  vea la definición anterior de 'D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58665,9):
+      vea la definición anterior de “D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(918,1): warning C4005: 'D3D11_ERROR_FILE_NOT_FOUND': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(918,9): warning C4005: 'D3D11_ERROR_FILE_NOT_FOUND': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59408,1):
-  vea la definición anterior de 'D3D11_ERROR_FILE_NOT_FOUND'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58674,9):
+      vea la definición anterior de “D3D11_ERROR_FILE_NOT_FOUND”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(919,1): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(919,9): warning C4005: 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59418,1):
-  vea la definición anterior de 'D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58684,9):
+      vea la definición anterior de “D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(920,1): warning C4005: 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d11.h(920,9): warning C4005: 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59427,1):
-  vea la definición anterior de 'D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58693,9):
+      vea la definición anterior de “D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,1): warning C4005: 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(608,9): warning C4005: 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59375,1):
-  vea la definición anterior de 'D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58641,9):
+      vea la definición anterior de “D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”
   
-C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,1): warning C4005: 'D3D10_ERROR_FILE_NOT_FOUND': redefinición de macro
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3d10.h(609,9): warning C4005: 'D3D10_ERROR_FILE_NOT_FOUND': redefinición de macro
   (compilando archivo de origen "main.cpp")
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\winerror.h(59384,1):
-  vea la definición anterior de 'D3D10_ERROR_FILE_NOT_FOUND'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\winerror.h(58650,9):
+      vea la definición anterior de “D3D10_ERROR_FILE_NOT_FOUND”
   
   C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\Camara.h(36,4): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\Camara.h(36,4): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(334,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(334,21): warning C4018: '<': no coinciden signed/unsigned
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(421,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(421,21): warning C4018: '<': no coinciden signed/unsigned
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(642,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(642,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(643,24): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(643,24): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(725,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(725,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(726,24): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(726,24): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(808,36): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(808,36): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(952,29): warning C4244: '=': conversión de 'float' a 'UINT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(952,29): warning C4244: '=': conversión de 'float' a 'UINT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(953,31): warning C4244: '=': conversión de 'float' a 'UINT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(953,31): warning C4244: '=': conversión de 'float' a 'UINT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(979,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(979,21): warning C4018: '<': no coinciden signed/unsigned
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(941,33): warning C4101: 'renderTargetViewDesc': variable local sin referencia
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(941,33): warning C4101: 'renderTargetViewDesc': variable local sin referencia
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(942,35): warning C4101: 'shaderResourceViewDesc': variable local sin referencia
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(942,35): warning C4101: 'shaderResourceViewDesc': variable local sin referencia
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1113,48): warning C4244: '/=': conversión de 'float' a 'unsigned char'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1113,48): warning C4244: '/=': conversión de 'float' a 'unsigned char'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1343,16): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1343,16): warning C4018: '<': no coinciden signed/unsigned
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1362,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1362,20): warning C4018: '<': no coinciden signed/unsigned
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1546,49): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1546,49): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1568,22): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\MeshPrimitives.h(1568,22): warning C4018: '<': no coinciden signed/unsigned
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(140,52): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(140,52): warning C4244: 'return': conversión de 'double' a 'float'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(163,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(163,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(163,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(163,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(164,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(164,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(164,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(164,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(165,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(165,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(165,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(165,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(166,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(166,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(166,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(166,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(167,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(167,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(167,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(167,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(168,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(168,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(168,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(168,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(169,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(169,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(169,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(169,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(170,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(170,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(170,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(170,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(171,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(171,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(171,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(171,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(172,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(172,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(172,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(172,27): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(173,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(173,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(173,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(173,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(174,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(174,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(174,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(174,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(175,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(175,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(175,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(175,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(176,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(176,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(176,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(176,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(177,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(177,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(177,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(177,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(178,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(178,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(178,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(178,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(179,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(179,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(179,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(179,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(180,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(180,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(180,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(180,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(181,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(181,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(181,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(181,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(182,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(182,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(182,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(182,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(183,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(183,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(183,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(183,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(184,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(184,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(184,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(184,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(185,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(185,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(185,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(185,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(186,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(186,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(186,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(186,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(187,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(187,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(187,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(187,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(188,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(188,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(188,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(188,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(189,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(189,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(189,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(189,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(190,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(190,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(191,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(191,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(191,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(191,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(192,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(192,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(192,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(192,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(193,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(193,36): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(193,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(193,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(194,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(194,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(194,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(194,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(195,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(195,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(195,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(195,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(196,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(196,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(196,29): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(196,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(197,39): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(197,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(197,29): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(197,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(198,40): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(198,39): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(198,29): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(198,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(199,38): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(199,37): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(199,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(199,28): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(224,31): warning C4244: '=': conversión de 'FLOAT' a 'int'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(224,31): warning C4244: '=': conversión de 'FLOAT' a 'int'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(225,31): warning C4244: '=': conversión de 'FLOAT' a 'int'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(225,31): warning C4244: '=': conversión de 'FLOAT' a 'int'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(227,22): warning C4244: '=': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(227,22): warning C4244: '=': conversión de 'double' a 'FLOAT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(228,22): warning C4244: '=': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(228,22): warning C4244: '=': conversión de 'double' a 'FLOAT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(212,55): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(312,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(421,20): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(312,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(422,21): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(313,44): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(518,36): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(313,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(519,33): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(314,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(571,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(314,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-  DXClase2.vcxproj -> C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\Debug\DXClase2.exe
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(315,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(315,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(316,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(316,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(317,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(317,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(318,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(318,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(319,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(319,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(320,44): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(320,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(217,55): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(438,20): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(439,21): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(476,31): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(477,31): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(539,36): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(540,33): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(592,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+  (compilando archivo de origen "main.cpp")
+  
+  DXClase2.vcxproj -> C:\Users\Admin\Documents\GitHub\DX11-Race-Game\DXClase10\Debug\DXClase2.exe
