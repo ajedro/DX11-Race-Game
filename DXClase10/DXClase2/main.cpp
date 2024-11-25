@@ -166,8 +166,8 @@ int messageloop(){
 			// run game code
 			gameui.m_loop();
 
-			dxrender->UpdateScene();
-			dxrender->DetectInput();
+			dxrender->UpdateScene(hwnd);
+			dxrender->DetectInput(hwnd);
 			dxrender->DrawScene();
 
 			gameui.refresh_buffer();

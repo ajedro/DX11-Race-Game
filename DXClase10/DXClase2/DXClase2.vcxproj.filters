@@ -350,6 +350,9 @@
     <ClInclude Include="mis clases\Race_points.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Race_check_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="vertexShader.vs">

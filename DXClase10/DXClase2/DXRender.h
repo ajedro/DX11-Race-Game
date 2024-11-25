@@ -81,7 +81,7 @@ private:
 	RaceCoords racecoords;
 	rectangle_colision colision1;
 	rectangle_colision colision2;
-	float PC_multiply = 100.0;
+	float PC_multiply = 1.0;
 
 	float angleb;
 	float velocity = 300 * PC_multiply;
@@ -92,8 +92,8 @@ private:
 	float top_speed = 0.02f * PC_multiply;
 	float velocity_car = 0.0f * PC_multiply;
 
-	float speed = 0.02f * (PC_multiply/10);
-	float wheeling = .002f * (PC_multiply / 10);
+	float speed = 0.02f * (PC_multiply);
+	float wheeling = .002f * (PC_multiply );
 
 
 public:
@@ -248,7 +248,7 @@ public:
 		return true;
 	}
 
-	void DetectInput()
+	void DetectInput(HWND hwnd)
 	{
 		DIMOUSESTATE mouseCurrState;
 
@@ -271,7 +271,7 @@ public:
 		camYaw = 0;
 		float camPitch = 0;
 
-		bool car_mode = true;
+		bool car_mode = false;
 		
 
 		if(keyboardState[DIK_A])
@@ -282,6 +282,8 @@ public:
 			else {
 				moveLeftRight -= speed;
 			}
+
+			
 			
 		}
 		if(keyboardState[DIK_D])
@@ -450,7 +452,7 @@ public:
 		return true;
 	}
 
-	void UpdateScene()
+	void UpdateScene(HWND hwnd)
 	{
 		
 		
