@@ -533,19 +533,13 @@ C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(26
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\GameMath.h(270,22): warning C4244: '=': conversión de 'double' a 'FLOAT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(320,42): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
-  (compilando archivo de origen "main.cpp")
-  
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(320,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
-  (compilando archivo de origen "main.cpp")
-  
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(321,43): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(321,42): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(321,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(322,44): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(322,43): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(322,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
@@ -563,13 +557,13 @@ C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\co
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(324,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(325,43): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(325,44): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(325,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(326,44): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(326,43): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(326,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
@@ -587,10 +581,10 @@ C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\co
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(328,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(329,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(329,44): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(329,33): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(329,32): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(330,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
@@ -599,31 +593,37 @@ C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\co
 C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(330,33): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(234,55): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(331,45): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(394,21): warning C4305: '=': truncamiento de 'double' a 'float'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\mis clases\colision_math.h(331,33): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(497,20): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(235,55): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(498,21): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(396,21): warning C4305: '=': truncamiento de 'double' a 'float'
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(538,31): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(499,20): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(539,31): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(500,21): warning C4244: '=': conversión de 'int' a 'FLOAT'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(619,36): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(541,31): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(620,33): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(542,31): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   (compilando archivo de origen "main.cpp")
   
-C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(685,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(624,36): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(625,33): warning C4244: 'argumento': conversión de 'double' a 'FLOAT'; posible pérdida de datos
+  (compilando archivo de origen "main.cpp")
+  
+C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\DXClase2\DXRender.h(690,35): warning C4305: 'argumento': truncamiento de 'double' a 'FLOAT'
   (compilando archivo de origen "main.cpp")
   
   DXClase2.vcxproj -> C:\Users\ajedro\Documents\GitHub\DX11-Race-Game\DXClase10\Debug\DXClase2.exe

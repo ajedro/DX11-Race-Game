@@ -293,29 +293,30 @@ private:
 	rectangle_colision CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9,CH10,CH11;
 	bool colisiones[11] = { false,false,false,false,false,false,false,false,false,false,false };
 	
-	bool ganar;
+	
 
 	int vueltas = 0;
-	int max_vueltas = 20;
+	int max_vueltas = 2;
 
 	
 
 
 public:
 	bool checkpoints[11] = { false,false,false,false,false,false,false,false,false,false,false };
+	bool ganar=false;
 	void init_race() {
 
-		CH1.init_rectangle(4, 4, 4);
-		CH2.init_rectangle(4, 4, 4);
-		CH3.init_rectangle(4, 4, 4);
-		CH4.init_rectangle(4, 4, 4);
-		CH5.init_rectangle(4, 4, 4);
-		CH6.init_rectangle(4, 4, 4);
-		CH7.init_rectangle(4, 4, 4);
-		CH8.init_rectangle(4, 4, 4);
-		CH9.init_rectangle(4, 4, 4);
-		CH10.init_rectangle(4, 4, 4);
-		CH11.init_rectangle(4, 4, 4);
+		CH1.init_rectangle(4, 20, 4);
+		CH2.init_rectangle(4, 20, 4);
+		CH3.init_rectangle(4, 20, 4);
+		CH4.init_rectangle(4, 20, 4);
+		CH5.init_rectangle(4, 20, 4);
+		CH6.init_rectangle(4, 20, 4);
+		CH7.init_rectangle(4, 20, 4);
+		CH8.init_rectangle(4, 20, 4);
+		CH9.init_rectangle(4, 20, 4);
+		CH10.init_rectangle(4, 20, 4);
+		CH11.init_rectangle(4, 20, 4);
 
 		CH1.set_position(D3DXVECTOR3(241.98,2, 259.289));
 		CH2.set_position(D3DXVECTOR3(196.759,2, 221.593));
@@ -360,7 +361,7 @@ public:
 
 		
 
-		for (int i = 1; i < 10; i++) {
+		for (int i = 1; i < 11; i++) {
 
 			if (colisiones[0]) {
 				checkpoints[0] = true;
@@ -374,7 +375,7 @@ public:
 
 
 
-		if (colisiones[10]&& checkpoints[10]) {
+		if (checkpoints[10]) {
 			if (vueltas <= max_vueltas) {
 				
 				become_false();
@@ -387,7 +388,7 @@ public:
 	}
 
 	void become_false() {
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 11; i++) {
 			checkpoints[i] = false;
 		};
 	}

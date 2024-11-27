@@ -90,11 +90,12 @@ private:
 	rectangle_colision colision1;
 	rectangle_colision colision2;
 	race_check_point check_points;
+	race_check_point check_points2;
 	
 	float PC_multiply = 1.0;
 
 	float angleb;
-	float velocity = 1 * PC_multiply;
+	float velocity = 14 * PC_multiply;
 	float camYaw = 0;
 
 	float aceleration = 0.000005f*PC_multiply;
@@ -211,10 +212,10 @@ public:
 		cono = new MPrimitives(d3d11Device, d3d11DevCon, 16, 0.0f, 1.0f, 2.0f, L"Texturas/escudo.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);
 		//edificio = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio2/Edificio2.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio2/edificio2.jpg", ShaderDiffuse);
 
-		edificio = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio2/Edificio2.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio2/edificio2.jpg", ShaderDiffuse);
+		edificio = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio2/Edificio2.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio2/edificio2.jpg", ShaderSpecular);
 		barrier = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Barrier/Barrier.txt", L"Texturas/Barrier/barrier2.png", L"Texturas/Barrier/barrier.png", ShaderDiffuse);
 		Bike = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Bike/Bike.txt", L"Texturas/Bike/Bike.bmp", L"Texturas/Bike/Bike.bmp", ShaderDiffuse);
-		Edificio1 = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio1/Edificio1.txt", L"Texturas/Edificio1/edificio1.jpg", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
+		Edificio1 = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio1/Edificio1.txt", L"Texturas/Edificio1/edificio1.jpg", L"Texturas/Edificio1/edificio1.jpg", ShaderNormalmap);
 		leaves = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/maple-tree/leaves.txt", L"Texturas/maple-tree/sugar_maple_leaf.png", L"Texturas/maple-tree/sugar_maple_leaf.png", ShaderDiffuse);
 
 		trunk = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/maple-tree/trunk.txt", L"Texturas/Sandbag/sandbag.bmp", L"Texturas/Sandbag/sandbag.bmp", ShaderDiffuse);
@@ -241,6 +242,7 @@ public:
 		InitObj_Matrix();
 		
 		check_points.init_race();
+		check_points2.init_race();
 		
 
 		IMGUI_CHECKVERSION();
@@ -519,6 +521,7 @@ public:
 		
 
 		racecoords.rellenar();
+
 		D3DXVECTOR2 a;
 		a= racecoords.get_punto(2);
 		a = a;
@@ -570,7 +573,7 @@ public:
 			velocity = velocity;
 		}
 		else {
-			velocity = 50;
+			velocity = 14;
 		}
 
 
@@ -613,6 +616,8 @@ public:
 			camara->Position.y = 30;
 		}
 
+
+		
 		
 		
 		//rotar objetos
@@ -702,6 +707,7 @@ public:
 		BoundingSphere2->UpdateScene(Bounding2* MatAcomodo);
 
 		check_points.check(colision2);
+		check_points2.check(colision1);
 
 	/*	if (check_points.checkpoints[1]) {
 			MessageBoxW(hwnd, L"COLISION 1", L"COLISION 1", NULL);
@@ -716,10 +722,6 @@ public:
 		//	BoundingSphereTranslation = LastBoundingPosition;
 		//}
 
-		
-
-		
-
 
 		DummyBoundyEvents.x = 0;
 		DummyBoundyEvents.y = 0;
@@ -733,66 +735,148 @@ public:
 
 		ImGui::SetNextWindowPos(ImVec2(0, 0));
 		ImGui::SetNextWindowSize(ImVec2(200, 300));
+		
+		ImGuiWindowFlags window_flags = 0;
+		//window_flags |= ImGuiWindowFlags_NoBackground;
+		//window_flags |= ImGuiWindowFlags_NoTitleBar;
 
-		if (ImGui::Begin("Test")) {
 
-			ImGui::Text("campitch: %f", camara->Pitch);
-			ImGui::Text("view = %f, %f", camara->Position.x, camara->Position.z);
-			ImGui::Text("vueltas = %i",check_points.return_vueltas());
 
-			for (int i = 0; i < 10; i++) {
-				if (check_points.checkpoints[i]) {
-					
 
-					string str ="C" +to_string(i)+".- TRUE";
 
-					int n = str.length();
+		//if (ImGui::Begin("Test",NULL, window_flags)) {
 
-					// declaring character array (+1 for null
-					  // character)
-					char arr[10];
+		//	ImGui::SetWindowFontScale(2.0f);
+		//	ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(0, 255, 0, 255));
+		//	ImGui::Text("campitch: %f", camara->Pitch);
+		//	ImGui::Text("view = %f, %f", camara->Position.x, camara->Position.z);
+		//	ImGui::Text("vueltas = %i",check_points.return_vueltas());
+		//	ImGui::PopStyleColor();
+		//	for (int i = 0; i < 10; i++) {
+		//		if (check_points.checkpoints[i]) {
+		//			
 
-					// copying the contents of the string to
-					  // char array
-					strcpy_s(arr, str.c_str());
+		//			string str ="C" +to_string(i)+".- TRUE";
 
-					cout << "{ ";
-					for (int i = 0; i < n; i++)
-						cout << arr[i] << ", ";
-					cout << "}";
+		//			int n = str.length();
 
-					ImGui::Text(arr);
-				}
+		//			// declaring character array (+1 for null
+		//			  // character)
+		//			char arr[10];
 
-				else {
-					string str = "C" + to_string(i) + ".- FALSE";
+		//			// copying the contents of the string to
+		//			  // char array
+		//			strcpy_s(arr, str.c_str());
 
-					int n = str.length();
+		//			cout << "{ ";
+		//			for (int i = 0; i < n; i++)
+		//				cout << arr[i] << ", ";
+		//			cout << "}";
 
-					// declaring character array (+1 for null
-					  // character)
-					char arr[11];
+		//			ImGui::Text(arr);
+		//		}
 
-					// copying the contents of the string to
-					  // char array
-					strcpy_s(arr, str.c_str());
+		//		else {
+		//			string str = "C" + to_string(i) + ".- FALSE";
 
-					cout << "{ ";
-					for (int i = 0; i < n; i++)
-						cout << arr[i] << ", ";
-					cout << "}";
+		//			int n = str.length();
 
-					ImGui::Text(arr);
-				}
+		//			// declaring character array (+1 for null
+		//			  // character)
+		//			char arr[11];
+
+		//			// copying the contents of the string to
+		//			  // char array
+		//			strcpy_s(arr, str.c_str());
+
+		//			cout << "{ ";
+		//			for (int i = 0; i < n; i++)
+		//				cout << arr[i] << ", ";
+		//			cout << "}";
+
+		//			ImGui::Text(arr);
+		//		}
+		//	}
+
+		//}ImGui::End(); 
+
+		window_flags = 0;
+		window_flags |= ImGuiWindowFlags_NoBackground;
+		window_flags |= ImGuiWindowFlags_NoTitleBar;
+
+		
+
+
+		bool prub = false;
+
+		if(check_points2.ganar && !check_points.ganar){
+			ImGui::SetNextWindowPos(ImVec2(600, 450));
+			ImGui::SetNextWindowSize(ImVec2(300, 300));
+
+			if (ImGui::Begin("Contador", NULL, window_flags)) {
+
+				ImGui::SetWindowFontScale(2.0f);
+
+				ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(255, 0, 0, 255));
+
+				ImGui::Text("PERDISTE");
+				ImGui::PopStyleColor();
+
+
+
+
+
+			}ImGui::End();
+		}
+		else {
+			
+
+
+			if (check_points.ganar)
+			{
+				ImGui::SetNextWindowPos(ImVec2(600, 450));
+				ImGui::SetNextWindowSize(ImVec2(300, 300));
+
+				if (ImGui::Begin("Contador", NULL, window_flags)) {
+
+					ImGui::SetWindowFontScale(2.0f);
+
+					ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(0, 255, 0, 255));
+
+					ImGui::Text("GANASTE");
+					ImGui::PopStyleColor();
+
+
+
+
+
+				}ImGui::End();
+
 			}
+			else {
 
 
-			
-			
 
-		}ImGui::End(); 
 
+
+				ImGui::SetNextWindowPos(ImVec2(0, 720));
+				ImGui::SetNextWindowSize(ImVec2(300, 300));
+
+				if (ImGui::Begin("Contador", NULL, window_flags)) {
+
+					ImGui::SetWindowFontScale(2.0f);
+					ImGui::Text("vueltas %i/5", check_points.return_vueltas() + 1);
+					ImGui::Text("Velocidad %.1f Km/Hr", velocity_car * 1250);
+
+
+
+
+				}ImGui::End();
+			}
+		}
 		ImGui::Render();
+
+
 
 		
 
@@ -833,7 +917,7 @@ public:
 		BoundingSphere1->DrawScene(camara);
 		BoundingSphere2->DrawScene(camara);
 
-		Bitmap->DrawBitmap(camara);
+		//Bitmap->DrawBitmap(camara);
 
 
 
@@ -882,6 +966,8 @@ public:
 	}
 	
 	
+
+
 };
 
 #endif
