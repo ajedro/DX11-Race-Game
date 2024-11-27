@@ -275,30 +275,36 @@ class race_check_point {
 private:
 
 	/*
-	(42.9201, -20.3594)
-	(100.94, 3.57478)
-	(81.1081, 51.4746)
-	(62.2656, 8.78733)
-	(22.2431, 8.38955)
-	(35.0577, 56.3332)
-	(19.5873, 33.9504)
-	(2.98123, 3.28955)
-	(16.523, -20.2937)
+	1.- (241.98, 259.289 )
+	2.- (196.759, 221.593 )
+	3.- (183.185, 145.018 )
+	4.- (244.419, 108.743 )
+	5.- (271.999, 71.6695 )
+	6.- (277.91, 134.729 )
+	7.- (315.982, 238.758 )
+	8.- (349.653, 360.639 )
+	9.- (306.356, 381.943 )
+	10.- (273.519, 330.56 )
+	11.- (236.286, 304.801 )
+
 	*/
 
 
-	rectangle_colision CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9;
-	bool colisiones[9] = { false,false,false,false,false,false,false,false,false };
+	rectangle_colision CH1, CH2, CH3, CH4, CH5, CH6, CH7, CH8, CH9,CH10,CH11;
+	bool colisiones[11] = { false,false,false,false,false,false,false,false,false,false,false };
 	
 	bool ganar;
 
 	int vueltas = 0;
-	int max_vueltas = 2;
+	int max_vueltas = 20;
+
+	
+
 
 public:
-	bool checkpoints[9] = { false,false,false,false,false,false,false,false,false };
-
+	bool checkpoints[11] = { false,false,false,false,false,false,false,false,false,false,false };
 	void init_race() {
+
 		CH1.init_rectangle(4, 4, 4);
 		CH2.init_rectangle(4, 4, 4);
 		CH3.init_rectangle(4, 4, 4);
@@ -308,16 +314,20 @@ public:
 		CH7.init_rectangle(4, 4, 4);
 		CH8.init_rectangle(4, 4, 4);
 		CH9.init_rectangle(4, 4, 4);
+		CH10.init_rectangle(4, 4, 4);
+		CH11.init_rectangle(4, 4, 4);
 
-		CH1.set_position(D3DXVECTOR3(42.9201, 15, -20.3594));
-		CH2.set_position(D3DXVECTOR3(100.94, 15, 3.57478));
-		CH3.set_position(D3DXVECTOR3(81.1081, 15, 51.4746));
-		CH4.set_position(D3DXVECTOR3(62.2656, 15, 8.78733));
-		CH5.set_position(D3DXVECTOR3(22.2431, 15, 8.38955));
-		CH6.set_position(D3DXVECTOR3(35.0577, 15, 56.3332));
-		CH7.set_position(D3DXVECTOR3(19.5873, 15, 33.9504));
-		CH8.set_position(D3DXVECTOR3(2.98123, 15, 3.28955));
-		CH9.set_position(D3DXVECTOR3(16.523, 15, -20.2937));
+		CH1.set_position(D3DXVECTOR3(241.98,2, 259.289));
+		CH2.set_position(D3DXVECTOR3(196.759,2, 221.593));
+		CH3.set_position(D3DXVECTOR3(183.185, 2, 145.018));
+		CH4.set_position(D3DXVECTOR3(244.419, 2, 108.743));
+		CH5.set_position(D3DXVECTOR3(271.999, 2, 71.6695));
+		CH6.set_position(D3DXVECTOR3(277.91, 2, 134.729));
+		CH7.set_position(D3DXVECTOR3(315.982, 2, 238.758));
+		CH8.set_position(D3DXVECTOR3(349.653, 2, 360.639));
+		CH9.set_position(D3DXVECTOR3(306.356, 2, 381.943));
+		CH10.set_position(D3DXVECTOR3(273.519, 2, 330.56));
+		CH11.set_position(D3DXVECTOR3(236.286, 2, 304.801));
 
 	}
 
@@ -345,13 +355,12 @@ public:
 		colisiones[6] = CH7.check_colision(in);
 		colisiones[7] = CH8.check_colision(in);
 		colisiones[8] = CH9.check_colision(in);
+		colisiones[9] = CH10.check_colision(in);
+		colisiones[10] = CH11.check_colision(in);
 
+		
 
-		if (colisiones[0]) {
-			checkpoints[0] = true;
-		}
-
-		for (int i = 1; i < 8; i++) {
+		for (int i = 1; i < 10; i++) {
 
 			if (colisiones[0]) {
 				checkpoints[0] = true;
@@ -365,8 +374,10 @@ public:
 
 
 
-		if (checkpoints[8]) {
-			if (vueltas < max_vueltas) {
+		if (colisiones[10]&& checkpoints[10]) {
+			if (vueltas <= max_vueltas) {
+				
+				become_false();
 				vueltas++;
 			}
 			else {
@@ -375,5 +386,18 @@ public:
 		}
 	}
 
+	void become_false() {
+		for (int i = 0; i < 10; i++) {
+			checkpoints[i] = false;
+		};
+	}
+	
+	int return_vueltas() {
+		return vueltas;
+	}
+
+	void print() {
+
+	}
 
 };

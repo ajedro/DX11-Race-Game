@@ -104,6 +104,21 @@ void escribir_archivo()
 	
 }
 
+void deleteList(coordenadas* curr) {
+
+	// Base case: If the list is empty, return
+	if (curr == nullptr) {
+		return;
+	}
+
+	// Recursively delete the next node
+	deleteList(curr->siguiente);
+
+	// Delete the current node
+	delete curr;
+}
+
+
 float clamp(float &clamped,float min, float max) {
 
 
@@ -145,7 +160,7 @@ float AngleofVectorT(D3DXVECTOR2 VecToAngle)
 class RaceCoords {
 private:
 
-	D3DXVECTOR2 puntos[37];
+	D3DXVECTOR2 puntos[54];
 
 	int selector = 0;
 
@@ -160,43 +175,70 @@ public:
 
 	void rellenar() {
 
-		puntos[0] = D3DXVECTOR2(23.2602, -20.6736);
-		puntos[1] = D3DXVECTOR2(68.6586, -20.3832);
-		puntos[2] = D3DXVECTOR2(73.6272, -19.8252);
-		puntos[3] = D3DXVECTOR2(79.9257, -18.1575);
-		puntos[4] = D3DXVECTOR2(82.909, -4.14951);
-		puntos[5] = D3DXVECTOR2(83.8502, 2.20306);
-		puntos[6] = D3DXVECTOR2(101.39, 3.63957);
-		puntos[7] = D3DXVECTOR2(107.16, 6.21434);
-		puntos[8] = D3DXVECTOR2(106.708, 18.4558);
-		puntos[9] = D3DXVECTOR2(104.787, 22.6905);
-		puntos[10] = D3DXVECTOR2(103.028, 26.9805);
-		puntos[11] = D3DXVECTOR2(90.0945, 27.6181);
-		puntos[12] = D3DXVECTOR2(85.1706, 29.1348);
-		puntos[13] = D3DXVECTOR2(82.8765, 46.1051);
-		puntos[14] = D3DXVECTOR2(75.5482, 51.824);
-		puntos[15] = D3DXVECTOR2(64.6552, 50.1858);
-		puntos[16] = D3DXVECTOR2(62.0334, 2.56001);
-		puntos[17] = D3DXVECTOR2(59.9795, -4.52882);
-		puntos[18] = D3DXVECTOR2(56.1053, -7.25111);
-		puntos[19] = D3DXVECTOR2(35.6617, -7.45482);
-		puntos[20] = D3DXVECTOR2(30.0139, -6.71532);
-		puntos[21] = D3DXVECTOR2(24.4336, -4.73922);
-		puntos[22] = D3DXVECTOR2(23.0478, 10.0596);
-		puntos[23] = D3DXVECTOR2(25.4669, 15.6823);
-		puntos[24] = D3DXVECTOR2(43.5712, 18.8534);
-		puntos[25] = D3DXVECTOR2(47.7069, 20.0516);
-		puntos[26] = D3DXVECTOR2(47.4722, 49.2458);
-		puntos[27] = D3DXVECTOR2(46.3125, 56.0999);
-		puntos[28] = D3DXVECTOR2(31.5686, 55.8292);
-		puntos[29] = D3DXVECTOR2(24.0354, 54.0818);
-		puntos[30] = D3DXVECTOR2(23.254, 41.8191);
-		puntos[31] = D3DXVECTOR2(22.9695, 33.6497);
-		puntos[32] = D3DXVECTOR2(3.09866, 32.1715);
-		puntos[33] = D3DXVECTOR2(-1.72648, 28.1964);
-		puntos[34] = D3DXVECTOR2(-1.32253, -12.7508);
-		puntos[35] = D3DXVECTOR2(-0.914822, -19.7274);
-		puntos[36] = D3DXVECTOR2(11.0379, -20.6017);
+		puntos[0]  =  D3DXVECTOR2(231.856, 293.321);
+		puntos[1]  =  D3DXVECTOR2(235.866, 274.226);
+		puntos[2]  =  D3DXVECTOR2(242.822, 262.504);
+		puntos[3]  =  D3DXVECTOR2(239.579, 247.309);
+		puntos[4]  =  D3DXVECTOR2(233.398, 244.663);
+		puntos[5]  =  D3DXVECTOR2(221.309, 241.961);
+		puntos[6]  =  D3DXVECTOR2(208.236, 238.036);
+		puntos[7]  =  D3DXVECTOR2(198.998, 226.525);
+		puntos[8]  =  D3DXVECTOR2(181.834, 185.524);
+		puntos[9]  =  D3DXVECTOR2(178.399, 167.072);
+		
+		puntos[10]  =  D3DXVECTOR2(177.493, 151.417);
+		puntos[11]  =  D3DXVECTOR2(181.639, 143.218);
+		puntos[12]  =  D3DXVECTOR2(190.338, 134.553);
+		puntos[13]  =  D3DXVECTOR2(200.914, 126.229);
+		puntos[14]  =  D3DXVECTOR2(219.802, 117.479);
+		puntos[15]  =  D3DXVECTOR2(235.329, 111.665);
+
+		puntos[16]  =  D3DXVECTOR2(242.89, 108.252) ;
+		puntos[17]  =  D3DXVECTOR2(247.825, 103.078);
+		puntos[18]  =  D3DXVECTOR2(245.085, 95.6535);
+		puntos[19]  =  D3DXVECTOR2(239.679, 83.5263);
+		puntos[20]  =  D3DXVECTOR2(237.487, 74.7529);
+
+		puntos[21]  =  D3DXVECTOR2(245.549, 62.8816);
+		puntos[22]  =  D3DXVECTOR2(260.456, 60.4258);
+		puntos[23]  =  D3DXVECTOR2(269.559, 65.5682);
+		puntos[24]  =  D3DXVECTOR2(275.975, 74.045) ;
+		puntos[25]  =  D3DXVECTOR2(274.841, 82.8916);
+
+		puntos[26]  =  D3DXVECTOR2(271.209, 91.0526);
+		puntos[27]  =  D3DXVECTOR2(268.62, 99.4299) ;
+		puntos[28]  =  D3DXVECTOR2(266.778, 108.889);
+		puntos[29]  =  D3DXVECTOR2(268.451, 118.613);
+		puntos[30]  =  D3DXVECTOR2(297.197, 181.076);
+
+		puntos[31]  =  D3DXVECTOR2(311.219, 204.398);
+		puntos[32]  =  D3DXVECTOR2(319.789, 224.143);
+		puntos[33]  =  D3DXVECTOR2(315.882, 237.842);
+		puntos[34]  =  D3DXVECTOR2(305.44, 252.916) ;
+		puntos[35]  =  D3DXVECTOR2(302.446, 268.332);
+
+		puntos[36]  =  D3DXVECTOR2(309.559, 286.308);
+		puntos[37]  =  D3DXVECTOR2(321.319, 307.742);
+		puntos[38]  =  D3DXVECTOR2(331.505, 327.63) ;
+		puntos[39]  =  D3DXVECTOR2(340.778, 342.959);
+		puntos[40]  =  D3DXVECTOR2(349.86, 359.939) ;
+
+		puntos[41]  =  D3DXVECTOR2(348.951, 371.073);
+		puntos[42]  =  D3DXVECTOR2(337.652, 382.864);
+		puntos[43]  =  D3DXVECTOR2(325.052, 387.921);
+		puntos[44]  =  D3DXVECTOR2(312.146, 388.411);
+		puntos[45]  =  D3DXVECTOR2(305.306, 381.222);
+
+		puntos[46]  =  D3DXVECTOR2(289.252, 341.532);
+		puntos[47]  =  D3DXVECTOR2(281.986, 331.95) ;
+		puntos[48]  =  D3DXVECTOR2(273.688, 327.332);
+		puntos[49]  =  D3DXVECTOR2(260.06, 328.541) ;
+		puntos[50]  =  D3DXVECTOR2(249.818, 328.82) ;
+
+		puntos[51]  =  D3DXVECTOR2(242.873, 321.745);
+		puntos[52]  =  D3DXVECTOR2(237.577, 313.093);
+		puntos[53]  =  D3DXVECTOR2(234.209, 302.751);
+
 
 	};
 
@@ -229,7 +271,7 @@ public:
 
 		
 		
-		if (selector > 36) {
+		if (selector > 53) {
 			selector = 0;
 		}
 

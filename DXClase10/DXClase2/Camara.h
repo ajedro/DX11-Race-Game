@@ -47,8 +47,13 @@ public:
 
 	void UpdateCamera(float moveBackForward, float moveLeftRight, float yaw, float pitch)
 	{
+
+		
+
 		Yaw += yaw;
 		Pitch += pitch;
+
+		
 
 		D3DXMatrixRotationYawPitchRoll(&camRotationMatrix, Yaw, Pitch, 0);
 		D3DXVec3TransformCoord(&Target, &DefaultForward, &camRotationMatrix);

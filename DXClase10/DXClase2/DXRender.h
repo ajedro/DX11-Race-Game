@@ -10,11 +10,15 @@
 #include "MeshPrimitives.h"
 
 #include "GameMath.h"
-#include "GameUiC.h"
+
 #include <colision_math.h>
 
 #include<iostream>
 #include <string>
+
+#include "imgui.h"
+#include "imgui_impl_win32.h"
+#include "imgui_impl_dx11.h"
 
 float x= 1;
 float z =1;
@@ -28,11 +32,11 @@ float camx, camz;
 
 class DXRender
 {
+
 private:
 	//Global Declarations//|
 	IDXGISwapChain* SwapChain;
-	ID3D11Device* d3d11Device;
-	ID3D11DeviceContext* d3d11DevCon;
+	
 	ID3D11RenderTargetView* renderTargetView;
 	ID3D11DepthStencilView* depthStencilView;
 
@@ -64,11 +68,13 @@ private:
 	MPrimitives *skydomo;
 	MPrimitives *terreno;
 	MPrimitives *Bitmap;
+	MPrimitives* track;
 	MPrimitives *BoundingSphere1;
 	MPrimitives *BoundingSphere2;
 
 	//JUEGO MODELOS
 	MPrimitives* gokart;
+	MPrimitives* gokart2;
 
 	Camara *camara;
 	Camara *skyCamara;
@@ -85,7 +91,7 @@ private:
 	rectangle_colision colision2;
 	race_check_point check_points;
 	
-	float PC_multiply = 10.0;
+	float PC_multiply = 1.0;
 
 	float angleb;
 	float velocity = 1 * PC_multiply;
@@ -101,7 +107,14 @@ private:
 
 	int posicionX, posicionY;
 
+	bool first_person = false;
+	float distance_to_floor = 12;
+
+
 public:
+	ID3D11Device* d3d11Device;
+	ID3D11DeviceContext* d3d11DevCon;
+
 	DXRender()
 	{
 		rotPerFrame = 0.0f;
@@ -197,24 +210,28 @@ public:
 		cilindro = new MPrimitives(d3d11Device, d3d11DevCon, 16, 1.0f, 1.0f, 2.0f, L"Texturas/escudo.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);
 		cono = new MPrimitives(d3d11Device, d3d11DevCon, 16, 0.0f, 1.0f, 2.0f, L"Texturas/escudo.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);
 		//edificio = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio2/Edificio2.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio2/edificio2.jpg", ShaderDiffuse);
-		
+
 		edificio = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio2/Edificio2.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio2/edificio2.jpg", ShaderDiffuse);
 		barrier = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Barrier/Barrier.txt", L"Texturas/Barrier/barrier2.png", L"Texturas/Barrier/barrier.png", ShaderDiffuse);
-		Bike = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/AE2.txt", L"Texturas/Bike/Bike.bmp", L"Texturas/Bike/Bike.bmp", ShaderDiffuse);
+		Bike = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Bike/Bike.txt", L"Texturas/Bike/Bike.bmp", L"Texturas/Bike/Bike.bmp", ShaderDiffuse);
 		Edificio1 = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Edificio1/Edificio1.txt", L"Texturas/Edificio1/edificio1.jpg", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
 		leaves = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/maple-tree/leaves.txt", L"Texturas/maple-tree/sugar_maple_leaf.png", L"Texturas/maple-tree/sugar_maple_leaf.png", ShaderDiffuse);
-		
+
 		trunk = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/maple-tree/trunk.txt", L"Texturas/Sandbag/sandbag.bmp", L"Texturas/Sandbag/sandbag.bmp", ShaderDiffuse);
-		racefence = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/roads.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
+		racefence = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/race-fence/race-fence.txt", L"Texturas/race-fence/Track_Fence_albedo.jpg", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
 		rubble = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Rubble/Rubble.txt", L"Texturas/Rubble/rubble.bmp", L"Texturas/Rubble/rubble.bmp", ShaderDiffuse);
 		sandbag = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/Sandbag/Sandbag.txt", L"Texturas/Sandbag/sandbag.bmp", L"Texturas/Sandbag/sandbag.bmp", ShaderDiffuse);
 		startline = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/starting-line/startline.txt", L"Texturas/Bike/Bike.bmp", L"Texturas/Bike/Bike.bmp", ShaderDiffuse);
-		gokart = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/gokart.txt", L"Texturas/Edificio2/edificio2.jpg", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
+		
+		gokart = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/AE2.txt", L"Texturas/AE86 Texture.png", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
+		gokart2 = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/2AE2.txt", L"Texturas/AE86 Texture.png", L"Texturas/Edificio1/edificio1.jpg", ShaderDiffuse);
+
+		track = new MPrimitives(d3d11Device, d3d11DevCon, "Texturas/track/track.txt", L"Texturas/track/track.jpg", L"Texturas/track/track.jpg", ShaderDiffuse);
 
 		billboard = new MPrimitives(d3d11Device, d3d11DevCon, 2.0f, 2.0f, L"Texturas/ave.png");
-		
+
 		skydomo = new MPrimitives(d3d11Device, d3d11DevCon, 32, 32, 1000.0f, L"Texturas/sky2.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);
-		terreno = new MPrimitives(d3d11Device, d3d11DevCon, 100.0f, L"Texturas/teterr.jpg", L"Texturas/texterr.jpg", "Texturas/heightmap2.bmp", ShaderMultitextura);
+		terreno = new MPrimitives(d3d11Device, d3d11DevCon, 500.0f, L"Texturas/teterr.jpg", L"Texturas/texterr2.jpg", "Texturas/heightmap2v3.bmp", ShaderMultitextura);
 
 		BoundingSphere1 = new MPrimitives(d3d11Device, d3d11DevCon, 32, 32, 1.0f, L"Texturas/escudo.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);
 		BoundingSphere2 = new MPrimitives(d3d11Device, d3d11DevCon, 32, 32, 1.0f, L"Texturas/escudo.jpg", L"Texturas/escudoNormal.jpg", ShaderDiffuse);
@@ -222,9 +239,20 @@ public:
 		
 		//Inicializar variables creadas por usuario
 		InitObj_Matrix();
-		gameui.initialize(hwnd, d3d11Device, d3d11DevCon);
+		
 		check_points.init_race();
 		
+
+		IMGUI_CHECKVERSION();
+		ImGui::CreateContext();
+		ImGuiIO& io = ImGui::GetIO();
+		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+		io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+		//io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;         // IF using Docking Branch
+
+		// Setup Platform/Renderer backends
+		ImGui_ImplWin32_Init(hwnd);
+		ImGui_ImplDX11_Init(d3d11Device, d3d11DevCon);
 
 		return true;
 	}
@@ -277,7 +305,7 @@ public:
 		camYaw = 0;
 		float camPitch = 0;
 
-		bool car_mode = false;
+		bool car_mode = true;
 		
 
 		if(keyboardState[DIK_A])
@@ -358,7 +386,21 @@ public:
 		{
 			agregar_coordenadas(camara->Position.x - 50, camara->Position.z - 50);
 		}
-		if (keyboardState[DIK_TAB]) {
+
+		if (keyboardState[DIK_C]) {
+
+			if (first_person) {
+				first_person = false;
+				camara->Pitch = 1.4;
+			}
+			else {
+				first_person = true;
+			}
+			
+
+			
+		}
+		/*if (keyboardState[DIK_TAB]) {
 			
 			
 
@@ -368,7 +410,7 @@ public:
 			MessageBoxA(hwnd, posicionXchar, "COLISION 1", NULL);
 
 			
-		}
+		}*/
 
 		if((mouseCurrState.lX != mouseLastState.lX) || (mouseCurrState.lY != mouseLastState.lY))
 		{
@@ -376,6 +418,16 @@ public:
 			camYaw = mouseCurrState.lX * smoothness;
 
 			camPitch = mouseCurrState.lY * smoothness;
+
+			if (camara->Pitch > 1.5) {
+				camara->Pitch = 1.5;
+			}
+
+			if (camara->Pitch < -1.5) {
+				camara->Pitch = (-1.5);
+			}
+			
+			
 
 			mouseLastState = mouseCurrState;
 		}
@@ -392,25 +444,32 @@ public:
 		d3d11DevCon->Release();
 		renderTargetView->Release();
 		depthStencilView->Release();
+
+		
 	}
 
 
 	//Inicializael lugar donde estaran los objetos
 	//aqui le dices donde va a estar el objeto.
 	void InitObj_Matrix() {
-		
-		edificio->set_obj_v(-49, 5, -49);
-		barrier->set_obj_v(23, 3, -20);
-		Bike->set_obj_v(25, 11, 1);
-		Edificio1->set_obj_v( -3, 3, 30);
-		leaves->set_obj_v( -9, 3, -10);
-		trunk->set_obj_v( -9, 6, -10);
-		racefence->set_obj_v(60, 8, 10);
-		rubble->set_obj_v( 25, 3, 10);
-		sandbag->set_obj_v( 15, 3, 15);
-		startline->set_obj_v( -6, 6, 10);
+
+		edificio->set_obj_v(333, 1, 389);
+		barrier->set_obj_v(168, 1, 132);
+
+		Bike->set_obj_v(230, 5, 290);
+		Edificio1->set_obj_v(500, 1, 305);
+		leaves->set_obj_v(281, 3, 195);
+		trunk->set_obj_v(281, 2, 195);
+		racefence->set_obj_v(193, 1, 187);
+		rubble->set_obj_v(217, -1, 137);
+		sandbag->set_obj_v(269, 1, 345);
+		startline->set_obj_v(236, -1, 292);
 		cubo->set_obj_v(0, 0, 0);
-		gokart->set_obj_v(0, 0, 0);
+	
+		gokart->set_obj_v(0, 2, 0);
+		gokart2->set_obj_v(0, 2, 0);
+
+		track->set_obj_v(280, 1, 260);
 
 	}
 
@@ -423,7 +482,7 @@ public:
 
 		colision1.set_position(Bike->get_obj_v());
 
-		colision2.set_position(camara->Position);
+		colision2.set_position(gokart->get_obj_v());
 	}
 	
 
@@ -466,6 +525,9 @@ public:
 
 		init_colision();
 
+		camara->Position.x = 289;
+		camara->Position.z = 365;
+
 		return true;
 	}
 
@@ -476,19 +538,19 @@ public:
 		posicionX = camara->Position.x;
 		posicionY = camara->Position.y;
 
-		gameui.program();
+		
 		LastBoundingPosition = BoundingSphereTranslation;
 		BoundingSphereTranslation += DummyBoundyEvents;
 
 	
 		rotPerFrame += 0.1f;
 
-		D3DXMATRIX rotMatY, northMat, westMat, eastMat, southMat, scale, rotMatX,MatAcomodo;
+		D3DXMATRIX rotMatY, northMat, westMat, eastMat, southMat, scale, rotMatX,MatAcomodo, scaletrack, rottrack, terrscale, ediscale1, edirot1, ediscale2;
 		
 		
 
-		D3DXMATRIX Bounding1, Bounding2, BoundinMatTranslation;
-		D3DXMATRIX edificiopos, barrierpos, bikepos, edificio1pos, leavespos, trunkpos, fencepos, rubblepos, sandbagpos, startlinepos;
+		D3DXMATRIX Bounding1, Bounding2, BoundinMatTranslation, fencescale, rotfence, scale3;
+		D3DXMATRIX edificiopos, barrierpos, bikepos, edificio1pos, leavespos, trunkpos, fencepos, rubblepos, sandbagpos, startlinepos, trackpos;
 
 		//Variables del juego
 		D3DXVECTOR3 gokartV;
@@ -533,7 +595,25 @@ public:
 		angleb = AngleofVectorT(CarMoveVec);
 		//mueve el objeto hacia cierta direccion
 		Bike->sum_obj_v(CarMoveVec.x * velocity, 0, CarMoveVec.y * velocity);
-		gokart->set_obj_v(camCoord.x,10,camCoord.z);
+
+		if (!first_person) {
+			gokart->set_obj_v(camCoord.x, -10, camCoord.z);
+			gokart2->set_obj_v(camCoord.x, 2, camCoord.z);
+
+			colision2.set_position(gokart2->get_obj_v());
+
+			camara->Position.y = 6.0;
+		}
+		else {
+			gokart->set_obj_v(camCoord.x, 2, camCoord.z);
+			gokart2->set_obj_v(camCoord.x, -10, camCoord.z);
+
+			colision2.set_position(gokart->get_obj_v());
+
+			camara->Position.y = 30;
+		}
+
+		
 		
 		//rotar objetos
 		D3DXMatrixRotationY(&rotMatBike, D3DXToRadian(angleb));
@@ -556,6 +636,16 @@ public:
 		D3DXMatrixTranslation(&BoundinMatTranslation, BoundingSphereTranslation.x, BoundingSphereTranslation.y, 0);
 		D3DXMatrixScaling(&scale, 0.03f, 0.03f, 0.03f);
 
+		D3DXMatrixScaling(&scaletrack, 24.00f, 28.00f, 24.00f);
+		D3DXMatrixRotationY(&rottrack, 90.0f);
+		D3DXMatrixScaling(&ediscale1, 2.00f, 3.00f, 7.50f);
+		D3DXMatrixRotationY(&edirot1, 0.36f);
+		D3DXMatrixScaling(&ediscale2, 2.00f, 2.00f, 2.00f);
+		D3DXMatrixScaling(&fencescale, 7.00f, 1.00f, 2.00f);
+		D3DXMatrixRotationY(&rotfence, -1.21f);
+		D3DXMatrixScaling(&scale3, 3.00f, 3.00f, 3.00f);
+
+		D3DXMatrixScaling(&terrscale, 3.00f, 1.00f, 3.00f);
 
 
 
@@ -567,20 +657,23 @@ public:
 		cilindro->UpdateScene(rotMatY * eastMat * northMat* MatAcomodo);
 		cono->UpdateScene(rotMatY * westMat* MatAcomodo);
 
-		edificio->UpdateScene_Obj(MatAcomodo);
-		barrier->UpdateScene_Obj(MatAcomodo);
+		edificio->UpdateScene_Obj(ediscale1 * edirot1 * MatAcomodo);
+		barrier->UpdateScene_Obj(ediscale2 * MatAcomodo);
 
 		//carro
 		Bike->UpdateScene_Obj(rotMatBike*MatAcomodo);
 
-		Edificio1->UpdateScene_Obj(MatAcomodo);
-		leaves->UpdateScene_Obj(MatAcomodo);
-		trunk->UpdateScene_Obj(MatAcomodo);
-		racefence->UpdateScene_Obj(MatAcomodo);
-		rubble->UpdateScene_Obj(MatAcomodo);
-		sandbag->UpdateScene_Obj(MatAcomodo);
-		startline->UpdateScene_Obj(MatAcomodo);
-		gokart->UpdateScene_Obj(gokartM *MatAcomodo);
+		Edificio1->UpdateScene_Obj(ediscale2 * edirot1 * MatAcomodo);
+		leaves->UpdateScene_Obj(scale3 * MatAcomodo);
+		trunk->UpdateScene_Obj(scale3 * MatAcomodo);
+		racefence->UpdateScene_Obj(fencescale * rotfence * MatAcomodo);
+		rubble->UpdateScene_Obj(scale3 * MatAcomodo);
+		sandbag->UpdateScene_Obj(scale3 * MatAcomodo);
+		startline->UpdateScene_Obj(ediscale2 * MatAcomodo);
+		gokart->UpdateScene_Obj(gokartM * MatAcomodo);
+		gokart2->UpdateScene_Obj(gokartM * MatAcomodo);
+
+		track->UpdateScene_Obj(rottrack * scaletrack * MatAcomodo);
 
 		
 
@@ -595,15 +688,14 @@ public:
 
 		//D3DXMatrixTranslation(&terrMat, -50, 0, -50);
 		D3DXMatrixIdentity(&terrMat);
-		terreno->UpdateScene(terrMat);
+		terreno->UpdateScene(terrscale* terrMat);
 
 		//camara->Position.y = terreno->getTerrainCollision(camara->getXZ()) +3;
-		camara->Position.y = 30;
-
+		
 
 		//colisioes
 		colision1.set_position(Bike->get_obj_v());
-		colision2.set_position(gokart->get_obj_v());
+		//colision2.set_position(gokart->get_obj_v());
 
 
 		BoundingSphere1->UpdateScene(Bounding1 * MatAcomodo * BoundinMatTranslation);
@@ -635,17 +727,86 @@ public:
 
 	void DrawScene()
 	{
+		ImGui_ImplDX11_NewFrame();
+		ImGui_ImplWin32_NewFrame();
+		ImGui::NewFrame();
+
+		ImGui::SetNextWindowPos(ImVec2(0, 0));
+		ImGui::SetNextWindowSize(ImVec2(200, 300));
+
+		if (ImGui::Begin("Test")) {
+
+			ImGui::Text("campitch: %f", camara->Pitch);
+			ImGui::Text("view = %f, %f", camara->Position.x, camara->Position.z);
+			ImGui::Text("vueltas = %i",check_points.return_vueltas());
+
+			for (int i = 0; i < 10; i++) {
+				if (check_points.checkpoints[i]) {
+					
+
+					string str ="C" +to_string(i)+".- TRUE";
+
+					int n = str.length();
+
+					// declaring character array (+1 for null
+					  // character)
+					char arr[10];
+
+					// copying the contents of the string to
+					  // char array
+					strcpy_s(arr, str.c_str());
+
+					cout << "{ ";
+					for (int i = 0; i < n; i++)
+						cout << arr[i] << ", ";
+					cout << "}";
+
+					ImGui::Text(arr);
+				}
+
+				else {
+					string str = "C" + to_string(i) + ".- FALSE";
+
+					int n = str.length();
+
+					// declaring character array (+1 for null
+					  // character)
+					char arr[11];
+
+					// copying the contents of the string to
+					  // char array
+					strcpy_s(arr, str.c_str());
+
+					cout << "{ ";
+					for (int i = 0; i < n; i++)
+						cout << arr[i] << ", ";
+					cout << "}";
+
+					ImGui::Text(arr);
+				}
+			}
+
+
+			
+			
+
+		}ImGui::End(); 
+
+		ImGui::Render();
+
+		
+
 		//Clear our backbuffer to the updated color
 		D3DXCOLOR bgColor(0.0f, 0.0f, 0.25f, 1.0f);
 		d3d11DevCon->ClearRenderTargetView(renderTargetView, bgColor);
 		//Refresh the Depth/Stencil view
 		d3d11DevCon->ClearDepthStencilView(depthStencilView, D3D11_CLEAR_DEPTH|D3D11_CLEAR_STENCIL, 1.0f, 0);
 		
-		cubo->DrawScene(camara);
+		//cubo->DrawScene(camara);
 		esfera->DrawScene(camara);
 		toroide->DrawScene(camara);
 		cilindro->DrawScene(camara);
-		
+
 		cono->DrawScene(camara);
 		edificio->DrawScene(camara);
 		barrier->DrawScene(camara);
@@ -657,7 +818,11 @@ public:
 		rubble->DrawScene(camara);
 		sandbag->DrawScene(camara);
 		startline->DrawScene(camara);
+
 		gokart->DrawScene(camara);
+		gokart2->DrawScene(camara);
+
+		track->DrawScene(camara);
 		//billboard->DrawScene(camara);
 
 		
@@ -670,6 +835,13 @@ public:
 
 		Bitmap->DrawBitmap(camara);
 
+
+
+
+		 // Show demo window! :)
+
+		
+		ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 
 		//Present the backbuffer to the screen
 		SwapChain->Present(0, 0);

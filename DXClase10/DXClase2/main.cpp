@@ -13,6 +13,12 @@
 using namespace std;
 #include "DXRender.h"
 
+
+//imgui
+#include "imgui.h"
+#include "imgui_impl_win32.h"
+#include "imgui_impl_dx11.h"
+
 LPCTSTR WndClassName = L"firstwindow";
 HWND hwnd = NULL;
 
@@ -139,12 +145,18 @@ bool InitializeWindow(HINSTANCE hInstance,
 	ShowWindow(hwnd, ShowWnd);
 	UpdateWindow(hwnd);
 
+	
+
 	return true;
 }
 
 int messageloop(){
 	MSG msg;
 	ZeroMemory(&msg, sizeof(MSG));
+
+	
+	
+
 	while (true)
 	{
 		BOOL PeekMessageL(
@@ -164,13 +176,17 @@ int messageloop(){
 		}
 		else{
 			// run game code
-			gameui.m_loop();
+			
+
+
 
 			dxrender->UpdateScene(hwnd);
 			dxrender->DetectInput(hwnd);
+			
+
 			dxrender->DrawScene();
 
-			gameui.refresh_buffer();
+			
 
 		}
 	}
@@ -193,6 +209,7 @@ LRESULT CALLBACK WndProc(HWND hwnd,
 	case WM_KEYDOWN:
 		if (wParam == VK_ESCAPE){
 			escribir_archivo();
+			deleteList(nodo);
 			DestroyWindow(hwnd);
 
 		}
